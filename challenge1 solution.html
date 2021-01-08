@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+  </head>
+  <body>
+    <h1>Create An Account</h1>   <!--<h2>Create An Account</h2>-->
+    <form>
+      <div>
+       <label for="first name">First name</label>
+       <input id="first name" required placeholder="First name" type="text"/>
+      </div>
+
+      <div> <!-- last (((-)))name id 띄어쓰기 없이 짝대기로 연결-->
+       <label for="last name">Last name</label>
+       <input id="last name" required placeholder="Last name" type="text"/>
+      </div>
+
+
+      <div>
+       <label for="email">Email</label>
+       <input id="email" required placeholder="Email" type="email" />
+      </div>
+      
+      <div>
+       <label for="user name">Username</label> <!--minlength-->
+       <input id="user name" required placeholder="Username" type="text"/>
+      </div>
+
+      <div>
+       <label for="password">Password</label>
+       <input id="password" required minlength="10" placeholder="Password" type="Password" />
+      </div>
+      
+      <div>
+       <label for="Birth date">Birth date</label>
+       <input id="Birth date" required type="date" />
+      </div>
+
+      <div>
+       <label>How happy are you?</label>  <!--for, id 값(레벨 태그와 인풋태그는 연결 안되어있음. 인풋과 데이타
+        리스트만 id와 list값으로 연결되어 있음)-->
+       <input required type="range" list="tickmarks" value=
+       "60"/>
+       <datalist id="tickmarks">
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100"></option>
+       </datalist>
+      </div>
+      
+    <div>
+     <label for="color">What is your fav.color?</label>
+     <input id="color" required type="color" />
+    </div>
+
+    <!-- <div> 태그 안줌-->
+    <input type="submit" value="Create Account"/>
+    </div>
+  </form>
+  </body>
+</html>
