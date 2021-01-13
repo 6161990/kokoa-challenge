@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(#529799, #9198e5);
+      }
+
+      .title {
+        color: black;
+        animation: title 1s ease-in-out;
+      }
+
+      @keyframes title {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(2);
+        }
+      }
+      .big {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #6bbcbe;
+        width: 600px;
+        height: 450px;
+      }
+      @keyframes dot {
+        from {
+          transform: rotateX(180deg);
+        }
+        to {
+          transform: rotateY(180deg);
+        }
+      }
+      .first__dot {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        animation: dot 1s ease-in-out infinite;
+      }
+
+      .first__dot div {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background-color: white;
+      }
+
+      .second__box {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .second__box div {
+        width: 10px;
+        height: 60px;
+        background-color: white;
+        border: #6bbcbe 5px solid;
+        animation: box 1s infinite;
+      }
+
+      @keyframes box {
+        0% {
+          transform: scaleY(1);
+        }
+        25% {
+          transform: scaleY(2);
+        }
+        50% {
+          transform: scaleY(1);
+        }
+        75% {
+          transform: scaleY(1);
+        }
+        100% {
+          transform: scaleY(1);
+        }
+      }
+
+      #w {
+        animation-delay: 0.1s;
+      }
+      #e {
+        animation-delay: 0.2s;
+      }
+      #r {
+        animation-delay: 0.3s;
+      }
+      #t {
+        animation-delay: 0.4s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="big">
+      <h3 class="title">Nico! HARD CHALLENGE!! <br />but thankyou..</h3>
+      <div class="first__dot">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="second__box">
+        <div id="q"></div>
+        <div id="w"></div>
+        <div id="e"></div>
+        <div id="r"></div>
+        <div id="t"></div>
+      </div>
+    </div>
+  </body>
+</html>

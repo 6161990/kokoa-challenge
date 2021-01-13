@@ -1,0 +1,125 @@
+body {
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.colors-tomato {
+  background-color: white;
+  width: 200px;
+  height: 300px;
+  padding: 5px;
+  margin: 20px;
+}
+.colors-tomato div {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  align-items: center;
+  position: relative;
+}
+.colors-tomato div:first-child span {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.colors-teal {
+  background-color: white;
+  width: 200px;
+  height: 300px;
+  padding: 5px;
+  margin: 20px;
+}
+.colors-teal div {
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  align-items: center;
+  position: relative;
+}
+.colors-teal div:first-child span {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.colors-burlywood {
+  background-color: white;
+  width: 200px;
+  height: 300px;
+  padding: 5px;
+  margin: 20px;
+}
+.colors-burlywood div {
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  align-items: center;
+  position: relative;
+}
+.colors-burlywood div:first-child span {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+.colors-thistle {
+  background-color: white;
+  width: 200px;
+  height: 300px;
+  padding: 5px;
+  margin: 20px;
+}
+.colors-thistle div {
+  background-color: thistle;
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  align-items: center;
+  position: relative;
+}
+.colors-thistle div:first-child span {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
