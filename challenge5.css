@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #0fc7af;
+  margin: 20px;
+  padding: 30px;
+  width: 450px;
+  height: 850px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.play {
+  height: 50%;
+}
+.status-bar {
+  display: flex;
+  margin: 40px 0px 45px 0px;
+}
+.status-bar div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 33%;
+}
+.status-bar h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+.now-play {
+  display: flex;
+}
+.album__border {
+  background-color: #ffbd11;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+.album {
+  background-color: #ffbd11;
+  width: 60px;
+  margin: 40px;
+  color: white;
+}
+
+.now-play__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+h4 {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+p {
+  font-weight: 700;
+  font-size: 20px;
+}
+.play_sing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 0px;
+}
+.play_sing_play {
+  width: 180px;
+  height: 70px;
+  border: 3px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px black;
+  font-size: 22px;
+  font-weight: 980;
+}
+.play_sing_play i {
+  width: 18%;
+}
+.play_sing_heart,
+.play_sing_add {
+  width: 60px;
+  height: 60px;
+  border: 3px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px black;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+}
+.list_color {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.list_color div {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.list_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.list_title div {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.list_title div p {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.list_title div span {
+  color: #6a6a6d;
+  font-weight: 500;
+}
+
+#a {
+  background-color: tomato;
+}
+#b {
+  background-color: #ff89bb;
+}
+#c {
+  background-color: #1947e5;
+}
+#d {
+  background-color: #0fc7af;
+}
