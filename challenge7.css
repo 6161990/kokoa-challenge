@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 750px;
+  padding: 40px;
+  background: linear-gradient(#e7d2d2, #435c49);
+  color: #222222;
+}
+
+main {
+  width: 320px;
+  height: 580px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  padding: 30px 20px 10px 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.exit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.music-now {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.music-now__album img {
+  margin-bottom: 20px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  box-shadow: 0px 20px 50px rgba(86, 167, 89, 0.637),
+    0 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-animation-name: cssAnimation;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes cssAnimation {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 800;
+}
+h4 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #b8b8b8;
+  margin-bottom: 20px;
+}
+.music-now__option {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.music-now__option--box {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.music-now__option-shuffle {
+  background-color: #222222;
+  color: #eeeeef;
+}
+.music-now__option-heart {
+  background-color: white;
+  color: #696969;
+  font-weight: 500;
+}
+.music-now__option-heart i {
+  margin-right: 5px;
+  color: #222222;
+}
+
+.li-click__cover img {
+  width: 43px;
+  height: 43px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.li-click__cover {
+  position: relative;
+}
+.li-click__cover i {
+  position: absolute;
+  bottom: 15px;
+  right: 28px;
+  color: #eeeeef;
+}
+.li-click__cover--now {
+  filter: brightness(80%);
+  box-shadow: 4px 4px 5px rgba(72, 221, 80, 0.637);
+}
+h5 {
+  font-size: 10px;
+  font-weight: 550;
+  color: #b8b8b8;
+  margin-bottom: 6px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.h3_title {
+  color: #eeeeef;
+}
+.li-click-icon {
+  font-size: 18px;
+}
+.li-click-icon i {
+  color: #9c9a9a;
+  padding-right: 5px;
+}
+.song-list {
+  display: flex;
+  height: 38%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.song-list__click {
+  width: 270px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.song-list__word {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.play-now {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: 60px;
+  background-color: #222222;
+  border-radius: 30px;
+  padding: 0px 25px;
+  color: #eeeeef;
+}
+.play-now__icon {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eeeeef;
+}
+.play-now__plus {
+  margin-top: 25px;
+  height: 70px;
+  background-color: #f7f7f7;
+  color: #222222;
+  font-size: 40px;
+}
+.play-now__plus i:nth-child(1),
+.play-now__plus i:last-child {
+  font-size: 20px;
+  color: #9c9a9a;
+}
+
+.music-now__big {
+  margin-top: 30px;
+  height: 60%;
+}
+.music-now__big-cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+.play-bar__time {
+  display: flex;
+  justify-content: space-between;
+}
+.play-bar__time span {
+  padding: 0px 5px;
+  font-size: 10px;
+  color: #696969;
+}
+input[type="range"] {
+  margin: 10px 0px;
+  -webkit-appearance: none;
+  overflow: hidden;
+  width: 100%;
+  height: 5px;
+  background: transparent;
+  cursor: pointer;
+  background: #9c9a9a;
+  border-radius: 40px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #eeeeef;
+  box-shadow: -100vw 0 0 100vw #304e2a;
+  cursor: pointer;
+}
